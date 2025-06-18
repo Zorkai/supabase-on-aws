@@ -1,5 +1,7 @@
 import Link from 'next/link'
-import { ReactMarkdown, ReactMarkdownOptions } from 'react-markdown/lib/react-markdown'
+import ReactMarkdown from 'react-markdown'
+import { Options as ReactMarkdownOptions } from 'react-markdown'
+
 import remarkGfm from 'remark-gfm'
 
 import { cn } from 'ui'
