@@ -601,7 +601,11 @@ const nextConfig = {
       test: /\.md$/,
       type: 'asset/source',
     })
-
+    config.resolve.alias = {
+      ...(config.resolve.alias || {}),
+      components: path.resolve(__dirname, 'components'),
+      // Add others if needed
+    }
     return config
   },
   onDemandEntries: {
