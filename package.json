@@ -66,8 +66,13 @@
     "constructs": "^10.0.5",
     "hono": "^3.2.6",
     "jsonwebtoken": "^8.5.1",
+    "openapi-fetch": "^0.14.0",
+    "pg-minify": "^1.7.0",
+    "react-dnd": "^16.0.1",
     "react-markdown": "8.0.3",
-    "utf8": "^3.0.0"
+    "sqlstring": "^2.3.3",
+    "utf8": "^3.0.0",
+    "zxcvbn": "^4.4.2"
   },
   "license": "Apache-2.0",
   "version": "0.0.0",
