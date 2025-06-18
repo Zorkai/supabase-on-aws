@@ -23,6 +23,7 @@
     "build:deno-types": "tsx scripts/deno-types.ts"
   },
   "dependencies": {
+    "@next/bundle-analyzer": "^15.3.4",
     "@sentry/nextjs": "^9.30.0",
     "@supabase/auth-js": "2.71.0-rc.4",
     "@supabase/realtime-js": "^2.11.3",
