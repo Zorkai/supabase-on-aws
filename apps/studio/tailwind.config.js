@@ -1,22 +1,21 @@
-const base = require('config/tailwind.config')
+const config = require('config/tailwind.config')
 
-module.exports = {
-  ...base,
+module.exports = config({
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
+    // purge styles from grid library
     './../../packages/ui/src/**/*.{tsx,ts,js}',
     './../../packages/ui-patterns/src/**/*.{tsx,ts,js}',
   ],
+  plugins: [require('@tailwindcss/container-queries')],
   theme: {
-    ...base.theme,
     extend: {
-      ...(base.theme?.extend || {}),
       fontSize: {
         grid: '13px',
       },
       colors: {
-        ...(base.theme?.extend?.colors || {}),
+        /*  typography */
         'typography-body': {
           light: 'hsl(var(--foreground-light))',
           dark: 'hsl(var(--foreground-light))',
@@ -33,6 +32,8 @@ module.exports = {
           light: 'hsl(var(--foreground-muted))',
           dark: 'hsl(var(--foreground-muted))',
         },
+
+        /* Tables */
         'table-body': {
           light: 'hsl(var(--background-default))',
           dark: 'hsl(var(--background-default))',
@@ -49,6 +50,8 @@ module.exports = {
           light: 'hsl(var(--border-default))',
           dark: 'hsl(var(--border-default))',
         },
+
+        /* Panels */
         'panel-body': {
           light: 'hsl(var(--background-surface-100))',
           dark: 'hsl(var(--background-surface-100))',
@@ -74,14 +77,19 @@ module.exports = {
           dark: 'hsl(var(--border-muted))',
         },
       },
+
       animation: {
         shimmer: 'shimmer 2s infinite linear',
         sway: 'sway 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       },
       keyframes: {
         shimmer: {
-          '0%': { 'background-position': '-1000px 0' },
-          '100%': { 'background-position': '1000px 0' },
+          '0%': {
+            'background-position': '-1000px 0',
+          },
+          '100%': {
+            'background-position': '1000px 0',
+          },
         },
         sway: {
           '0%, 100%': {
@@ -94,4 +102,4 @@ module.exports = {
       },
     },
   },
-}
+})
