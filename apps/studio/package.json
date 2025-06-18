@@ -30,6 +30,7 @@
     "@sentry/nextjs": "^9.30.0",
     "@supabase/auth-js": "2.71.0-rc.4",
     "@supabase/realtime-js": "^2.11.3",
+    "@supabase/shared-types": "0.1.80",
     "@supabase/supabase-js": "^2.47.14",
     "file-saver": "^2.0.5",
     "next": "15.3.1",

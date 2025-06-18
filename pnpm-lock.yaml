@@ -219,6 +219,9 @@ importers:
       '@supabase/realtime-js':
         specifier: ^2.11.3
         version: 2.11.3
+      '@supabase/shared-types':
+        specifier: 0.1.80
+        version: 0.1.80
       '@supabase/supabase-js':
         specifier: ^2.47.14
         version: 2.49.3
@@ -4246,6 +4249,9 @@ packages:
 
   '@supabase/realtime-js@2.11.3':
     resolution: {integrity: sha512-rMMGtZy2MaSBlNXP5hJZx+ij5JtQGPuBQ7/izE1oKlR1A6SzbN0VWeFTdmDHVa1gcJ72zpQAjbSmByIG6uz/eA==}
+
+  '@supabase/shared-types@0.1.80':
+    resolution: {integrity: sha512-U2ACit34Up5OzB53dthb50YVGcAUzkuWn0Wq9fXWDdfl4Wlp+euWKSSVUMUIQo+bf2phu3V/PmVHEWR6dpls1g==}
 
   '@supabase/sql-to-rest@0.1.6':
     resolution: {integrity: sha512-06KgjeINtc6405XQvfnchBE1azEsU8G2NElfadmvVHKmHa5l2bFzjbtFbpaYgpgTzccHlcDmBaCgedVf2Gyl8Q==}
@@ -14499,6 +14505,8 @@ snapshots:
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
+
+  '@supabase/shared-types@0.1.80': {}
 
   '@supabase/sql-to-rest@0.1.6(encoding@0.1.13)':
     dependencies:
