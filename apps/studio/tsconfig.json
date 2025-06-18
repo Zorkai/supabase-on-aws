@@ -18,7 +18,8 @@
     "incremental": true,
     "paths": {
       "@ui/*": ["./../../packages/ui/src/*"], // handle ui package paths
-      "components/*": ["./components/*"]
+      "components/*": ["components/*"]
+
     },
     "useDefineForClassFields": true,
     "plugins": [
